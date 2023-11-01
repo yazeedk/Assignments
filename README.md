@@ -20,8 +20,8 @@ because the director contains all the characteristics of the user.
 - Interface Segregation Principle: 
 All types of reports implements into one interface, to make adding a new type of report more easy.
 
-.
-Dependency Inversion Principle: 
+
+- Dependency Inversion Principle: 
 I achieved the Dependency  principle  by placing the categories in different packages. 
 For example, I placed the categories related to the user in the user package.
 Which concerns the report and everything related to it, I placed it in the report package.
@@ -30,5 +30,5 @@ And Data base i put it in a separate package called Data Base
 
 
 
-Some challenges:
+- Some challenges:
 To make the system more flexible to add a new report type, create each report type in a separate class, and implement each class of "IReport"
