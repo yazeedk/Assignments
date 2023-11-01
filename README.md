@@ -1,5 +1,8 @@
 # Assignments
 
+![Company](https://github.com/yazeedk/Assignments/assets/36983323/4f5b899f-2a56-4d41-9f1e-a03e5dfe2b25)
+
+
 
 I achieved Solid Principles, and I did it like this:
 -
