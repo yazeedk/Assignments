@@ -2,6 +2,7 @@
 
 
 I achieved Solid Principles, and I did it like this:
+-
 1- Single Responsibility Principle:
 Each class contains only the information and operations that related to the same class topic and no other information.
 
