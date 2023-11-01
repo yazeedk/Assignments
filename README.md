@@ -12,7 +12,7 @@ I created an interface for the report, and the various types of reports perform 
 If I want to add a new type of report in the future, I only have to add a new class called the Report Employments type from the interface.
 
 - Liskov Substitution Principle: 
-I can change the father and son classes, so that I can make the director as the father class of the user and the user class as the son of the director class, 
+I can change the parent and son classes, so that I can make the director as the parent class of the user and the user class as the son of the director class, 
 because the director contains all the characteristics of the user.
 
 
