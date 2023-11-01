@@ -6,7 +6,7 @@
 
 I achieved Solid Principles, and I did it like this:
 -
-1- Single Responsibility Principle:
+- Single Responsibility Principle:
 Each class contains only the information and operations that related to the same class topic and no other information.
 
 - Open-Closed Principle:
@@ -31,11 +31,13 @@ For example, I placed the categories related to the user in the user package.
 Which concerns the report and everything related to it, I placed it in the report package.
 And Data base i put it in a separate package called Data Base
 
+- Some challenges:
+To make the system more flexible to add a new report type, create each report type in a separate class, and implement each class of "IReport"
+
 ![image](https://github.com/yazeedk/Assignments/assets/36983323/a4602463-eb07-4216-9835-d007f352b5d3)
 
  
 
 
 
-- Some challenges:
-To make the system more flexible to add a new report type, create each report type in a separate class, and implement each class of "IReport"
+
