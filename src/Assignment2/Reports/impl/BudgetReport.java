@@ -18,7 +18,7 @@ public class BudgetReport implements IReport {
 
     public static void printDirectorBudget(Director director) {
         double totalBudget = director.getDirectorTotalCompletedHour() * director.getDirectorHourlyRate();
-        System.out.println("\nBudget for Director " + director.getName() + ": $" + totalBudget);
+        System.out.println("\nBudget for Director " + director.getDirectorName() + ": $" + totalBudget);
     }
 
 
