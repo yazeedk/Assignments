@@ -30,6 +30,9 @@ I achieved the Dependency  principle  by placing the categories in different pac
 For example, I placed the categories related to the user in the user package.
 Which concerns the report and everything related to it, I placed it in the report package.
 And Data base i put it in a separate package called Data Base
+
+![image](https://github.com/yazeedk/Assignments/assets/36983323/a4602463-eb07-4216-9835-d007f352b5d3)
+
  
 
 
