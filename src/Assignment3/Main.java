@@ -20,7 +20,6 @@ public class Main {
 
 
         WeatherDataSubject.registerObserver(currentConditions);
-        WeatherDataSubject.registerObserver(statisticsDisplay);
         WeatherDataSubject.registerObserver(temperatureUnitsDecorator);
         WeatherDataSubject.registerObserver(windSpeedDecorator);
 
