@@ -1,20 +1,18 @@
-package ObserverPattern;
+package Assignment3.ObserverPattern;
 
-import ObserverPattern.intf.IWeatherDataSubject;
-import ObserverPattern.intf.WeatherDataObserver;
+import Assignment3.ObserverPattern.intf.IWeatherDataSubject;
+import Assignment3.ObserverPattern.intf.WeatherDataObserver;
 
 public class CurrentConditionsDisplay implements WeatherDataObserver {
     private float temperature;
     private float humidity;
     @Override
     public void display(float temperature) {
-        WeatherDataObserver.super.display(Float.parseFloat((("Current Weather Condition : " + temperature))));
+        update(humidity,temperature);
     }
     @Override
     public void update(float humidity, float temperature) {
-        System.out.println("Current Humidity :" +humidity+"%"+ ", Current Temperature : " + temperature+"C");
-        this.setTemperature(temperature);
-        this.setHumidity(humidity);
+        System.out.println("Current Humidity :" +this.humidity+"%"+ ", Current Temperature : " + this.temperature+"C");
     }
     public float getTemperature() {
         return temperature;

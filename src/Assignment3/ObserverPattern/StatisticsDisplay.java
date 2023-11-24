@@ -1,6 +1,6 @@
-package ObserverPattern;
+package Assignment3.ObserverPattern;
 
-import ObserverPattern.intf.WeatherDataObserver;
+import Assignment3.ObserverPattern.intf.WeatherDataObserver;
 public class StatisticsDisplay implements WeatherDataObserver {
     private float temperature;
     private float humidity;
@@ -14,12 +14,16 @@ public class StatisticsDisplay implements WeatherDataObserver {
         this.setHumidity(humidity);
         display(temperature);
     }
-    @Override
-    public void display(float temperature) {
+    void converter(){
         int numReadings = 0;
         float averageTemperature = ((temperature) / (numReadings+1));
         float averageHumidity = ((humidity) / (numReadings+1));
         System.out.println("Temperature average : " + averageTemperature +"C" + ", Humidity average : "+ averageHumidity +"C");
+
+    }
+    @Override
+    public void display(float temperature) {
+        converter();
     }
 
     public float getTemperature() {

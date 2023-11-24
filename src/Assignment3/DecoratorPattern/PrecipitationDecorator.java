@@ -1,6 +1,6 @@
-package DecoratorPattern;
+package Assignment3.DecoratorPattern;
 
-import ObserverPattern.StatisticsDisplay;
+import Assignment3.ObserverPattern.StatisticsDisplay;
 
 public class PrecipitationDecorator implements IWeatherConditionsDecorator {
     public PrecipitationDecorator() {

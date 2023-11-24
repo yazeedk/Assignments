@@ -1,6 +1,6 @@
-package DecoratorPattern;
+package Assignment3.DecoratorPattern;
 
-import ObserverPattern.CurrentConditionsDisplay;
+import Assignment3.ObserverPattern.CurrentConditionsDisplay;
 
 public  class WindSpeedDecorator implements IWeatherConditionsDecorator{
     public WindSpeedDecorator(CurrentConditionsDisplay currentConditionsDisplay) {

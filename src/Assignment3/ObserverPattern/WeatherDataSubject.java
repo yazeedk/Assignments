@@ -1,7 +1,7 @@
-package ObserverPattern;
+package Assignment3.ObserverPattern;
 
-import ObserverPattern.intf.IWeatherDataSubject;
-import ObserverPattern.intf.WeatherDataObserver;
+import Assignment3.ObserverPattern.intf.IWeatherDataSubject;
+import Assignment3.ObserverPattern.intf.WeatherDataObserver;
 
 import java.util.ArrayList;
 
@@ -15,10 +15,12 @@ public class WeatherDataSubject implements IWeatherDataSubject {
     public static void registerObserver(WeatherDataObserver weatherDataObserver) {
         observers.add(weatherDataObserver);
     }
+
     @Override
-    public void removeObserver(WeatherDataObserver observer) {
-        observers.remove(observer);
+    public void removeObserver(WeatherDataObserver weatherDataObserver) {
+
     }
+
     @Override
     public void notifyObservers() {
         for (WeatherDataObserver observer : observers) {

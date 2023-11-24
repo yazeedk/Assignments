@@ -1,9 +1,13 @@
-import DecoratorPattern.PrecipitationDecorator;
-import DecoratorPattern.TemperatureUnitsDecorator;
-import DecoratorPattern.WindSpeedDecorator;
-import ObserverPattern.CurrentConditionsDisplay;
-import ObserverPattern.StatisticsDisplay;
-import ObserverPattern.WeatherDataSubject;
+package Assignment3;
+
+import Assignment3.DecoratorPattern.PrecipitationDecorator;
+import Assignment3.DecoratorPattern.TemperatureUnitsDecorator;
+import Assignment3.DecoratorPattern.WindSpeedDecorator;
+import Assignment3.ObserverPattern.CurrentConditionsDisplay;
+import Assignment3.ObserverPattern.StatisticsDisplay;
+import Assignment3.ObserverPattern.WeatherDataSubject;
+import Assignment3.ObserverPattern.intf.WeatherDataObserver;
+
 public class Main {
     public static void main(String[] args) {
 

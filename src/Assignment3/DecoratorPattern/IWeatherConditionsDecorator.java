@@ -1,6 +1,6 @@
-package DecoratorPattern;
+package Assignment3.DecoratorPattern;
 
-import ObserverPattern.intf.WeatherDataObserver;
+import Assignment3.ObserverPattern.intf.WeatherDataObserver;
 
 public interface IWeatherConditionsDecorator extends WeatherDataObserver {
     void update(float humidity, float temperature);
