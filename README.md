@@ -1,43 +1,23 @@
-# Assignments
+# Assignment 3
 
-![Company](https://github.com/yazeedk/Assignments/assets/36983323/4f5b899f-2a56-4d41-9f1e-a03e5dfe2b25)
+I worked on a system using Observer and Decorator Design Patterns. First, I achieved the Observer Design Pattern as follows:
+
+create desplay, update into WeatherDataObserver interface, StatisticsDisplay and CurrentConditionsDisplay was implements from WeatherDataObserver interface and override the desplay and update method, and use it to update the subject for all observers. 
+
+WeatherDataObserver and  CurrentConditionsDisplay does display the information by add the statement for update, and display it from display method. 
+
+WeatherDataSubject class has implements from IWeatherDataSubject, and has do the observers operations, like remove, notify registerd observers. 
+
+i make the system flixeble, for future easy to add, remove for obserers. 
+and i add an interface and the concrete class implements from it, to be able to add any concrete weather type for future.
 
 
-
-I achieved Solid Principles, and I did it like this:
--
-- Single Responsibility Principle:
-Each class contains only the information and operations that related to the same class topic and no other information.
-
-- Open-Closed Principle:
- I acheived this Principle. 
-An example of this is: 
-I created an interface for the report, and the various types of reports perform implemens from it. 
-If I want to add a new type of report in the future, I only have to add a new class called the Report Employments type from the interface.
-
-- Liskov Substitution Principle: 
-I can change the parent and son classes, so that I can make the director as the parent class of the user and the user class as the son of the director class, 
-because the director contains all the characteristics of the user.
+for Decorate, i created IWeatherConditionsDecorator interface, and all decorate classes has implements from this interface, that make the system more flexible, like its easy to be add any decorate class for any weather type. 
+and i make the IWeatherConditionsDecorator interface extends from WeatherDataObserver interface , to use the same update method and update any information to be up to date for all system
 
 
 
-- Interface Segregation Principle: 
-All types of reports implements into one interface, to make adding a new type of report more easy.
+## output : 
+![399187191_279476348398838_229034934674904711_n](https://github.com/yazeedk/Assignments/assets/36983323/3ca605cc-e505-4795-8cd1-336015c154b8)
 
-
-- Dependency Inversion Principle: 
-I achieved the Dependency  principle  by placing the categories in different packages. 
-For example, I placed the categories related to the user in the user package.
-Which concerns the report and everything related to it, I placed it in the report package.
-And Data base i put it in a separate package called Data Base
-
-- Some challenges:
-To make the system more flexible to add a new report type, create each report type in a separate class, and implement each class of "IReport"
-
-![image](https://github.com/yazeedk/Assignments/assets/36983323/a4602463-eb07-4216-9835-d007f352b5d3)
-
- 
-
-
-
-
+![Untitled Diagram](https://github.com/yazeedk/Assignments/assets/36983323/f90da478-b9e3-4c1e-8744-50e344dcfe05)
